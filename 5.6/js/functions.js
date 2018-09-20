@@ -1,5 +1,3 @@
-var panzoomRunning = false;
-
 var options = {pointers: 1};
 
 function ipadSwipe() {
@@ -51,24 +49,6 @@ $(document).ready(function() {
           $('body').removeClass('large');
 		  localStorage.removeItem('fontSize');
     });
-	
-	$('.panzoom').panzoom({
-		minScale: 1,
-		maxScale: 5,
-		panOnlyWhenZoomed: true,
-		onStart: function() {
-			var panzoomRunning = true;
-		},
-		onEnd: function() {
-			$(this).panzoom('reset', {
-				animate: true,
-			});
-			setTimeout(function() {
-				var panzoomRunning = false;
-			}, 500);
-		}
-	});
-	
 });
 
 $(window).load(function() {
