@@ -732,28 +732,4 @@ div.ui-overlay-a, div.ui-page-theme-a {
 .ui-page {
 	-webkit-backface-visibility: hidden;
 	width: 1024px;
-} 
-
-/*
-* === panzoom ===
-*/
-
-.panzoom {
-	z-index: 50;
-	position: relative;
-}
-
-.panzoom .pinch {
-    position: fixed;
-    bottom: 15px!important;
-    right: 15px;
-    z-index: 999;
-    background: url(pinch-zoom.png) no-repeat 0 0;
-    height: 90px;
-    width: 125px;
-	opacity: 0.75;
-}
-
-.panzoom .pinch.dark {
-	background: url(pinch-zoom-dark.png) no-repeat 0 0;
 }
