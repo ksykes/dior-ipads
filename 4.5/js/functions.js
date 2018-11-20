@@ -1,12 +1,14 @@
 var options = {pointers: 1};
 
 function ipadSwipe() {
-	new Hammer(document, options).on('swipeleft', function(ev) {
+	var sliderBody = document.getElementById('sliderBody');
+
+	new Hammer(sliderBody, options).on('swipeleft', function (ev) {
 		ev.preventDefault();
 		var nextpage = $.mobile.activePage.next('[data-role="page"]');
-		var firstpage = $.mobile.activePage.siblings('#page1');
+		var firstpage = $.mobile.activePage.siblings('.firstpage');
 		if (nextpage.length) {
-			$.mobile.changePage(nextpage, {transition: "slide", reverse: false}, true, true);
+			$.mobile.changePage(nextpage, { transition: "slide", reverse: false }, true, true);
 			$('#menu li.active').removeClass('active').next().addClass('active');
 		} else {
 			$.mobile.changePage(firstpage, { transition: "slide", reverse: false }, true, true);
@@ -14,18 +16,18 @@ function ipadSwipe() {
 			$('#menu li:first-child').addClass('active');
 		}
 	});
-	
-	new Hammer(document, options).on('swiperight', function(ev) {
+
+	new Hammer(sliderBody, options).on('swiperight', function (ev) {
 		ev.preventDefault();
 		var prevpage = $.mobile.activePage.prev('[data-role="page"]');
-		var lastpage = $.mobile.activePage.siblings('#page4');
+		var lastpage = $.mobile.activePage.siblings('.lastpage');
 		if (prevpage.length) {
-            $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
-            $('#menu li.active').removeClass('active').prev().addClass('active');
-        } else {
-			$.mobile.changePage(lastpage, {transition: "slide", reverse: true}, true, true);
+			$.mobile.changePage(prevpage, { transition: "slide", reverse: true }, true, true);
+			$('#menu li.active').removeClass('active').prev().addClass('active');
+		} else {
+			$.mobile.changePage(lastpage, { transition: "slide", reverse: true }, true, true);
 			$("#menu li.active").removeClass("active");
-      		$("#menu li:last-child").addClass("active");
+			$("#menu li:last-child").addClass("active");
 		}
 	});
 }
