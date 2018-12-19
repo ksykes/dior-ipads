@@ -203,7 +203,7 @@ html body .ui-group-theme-a a:visited {
 }
 
 .inner {
-	padding: 20px;
+	padding: 20px 30px 20px 20px;
 	position: relative;
 	z-index: 20;
 }
@@ -225,7 +225,7 @@ html body .ui-group-theme-a a:visited {
 
 .tombstone {
 	font-family: 'WhitneyBookSC';
-	margin-top: 30px;
+	margin-top: 20px;
 	z-index: 5;
 	text-transform: lowercase;
 	line-height: 1;
@@ -498,7 +498,7 @@ html body .ui-group-theme-a a:visited {
 
 #soundbite {
 	width: 80%;
-	padding: 88px 35px 0 40px;
+	padding: 68px 35px 0 40px;
 	line-height: 38px;
 }
 
