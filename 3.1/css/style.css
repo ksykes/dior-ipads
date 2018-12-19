@@ -348,7 +348,7 @@ html body .ui-group-theme-a a:visited {
     position: relative;
     overflow: hidden;
 	color: #333F48;
-	background: url('hat-home.png') no-repeat 0 0;
+	background: url('hat-home.png') center no-repeat;
 }
 
 #header > .col:first-child .inner {
