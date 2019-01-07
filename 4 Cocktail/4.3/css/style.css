@@ -203,7 +203,7 @@ html body .ui-group-theme-a a:visited {
 }
 
 .inner {
-	padding: 20px 30px 20px 20px;
+	padding: 35px 30px 20px 20px;
 	position: relative;
 	z-index: 20;
 }
@@ -352,13 +352,13 @@ html body .ui-group-theme-a a:visited {
 }
 
 #header > .col:first-child .inner {
-	margin-left: 73px;
+	margin-left: 43px;
 }
 
 #header > .span_1_of_2:nth-child(2) .inner,
 #header > .col:nth-child(3) .inner {
 	text-align: right;
-	margin-right: 73px;
+	margin-right: 43px;
 }
 
 #header .top {
@@ -446,7 +446,7 @@ html body .ui-group-theme-a a:visited {
 
 .inside h2 {
 	font-size: 1.5em;
-	margin-top: 12px;
+	/* margin-top: 12px; */
 }
 
 .inside .credit {
@@ -591,6 +591,7 @@ html body .ui-group-theme-a a:visited {
 
 .slide .caption ul {
 	padding-left: 25px;
+	font-size: 0.85em;
 }
 
 .slide .caption ul li {
