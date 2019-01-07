@@ -22,36 +22,37 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 
 		<!-- Stylesheets -->
-		<link rel="stylesheet" href="../css/html5reset.css" media="all">
-		<link rel="stylesheet" href="../css/col.css" media="all">
-		<link rel="stylesheet" href="../css/2cols.css" media="all">
-		<link rel="stylesheet" href="../css/3cols.css" media="all">
-		<link rel="stylesheet" href="../css/4cols.css" media="all">
-		<link rel="stylesheet" href="../css/5cols.css" media="all">
-		<link rel="stylesheet" href="../css/6cols.css" media="all">
-		<link rel="stylesheet" href="../css/7cols.css" media="all">
-		<link rel="stylesheet" href="../css/8cols.css" media="all">
-		<link rel="stylesheet" href="../css/9cols.css" media="all">
-		<link rel="stylesheet" href="../css/10cols.css" media="all">
-		<link rel="stylesheet" href="../css/11cols.css" media="all">
-		<link rel="stylesheet" href="../css/12cols.css" media="all">
-		<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.css" media="all">
-		<link rel="stylesheet" href="../css/style.css" media="all">
+		<link rel="stylesheet" href="css/html5reset.css" media="all">
+		<link rel="stylesheet" href="css/col.css" media="all">
+		<link rel="stylesheet" href="css/2cols.css" media="all">
+		<link rel="stylesheet" href="css/3cols.css" media="all">
+		<link rel="stylesheet" href="css/4cols.css" media="all">
+		<link rel="stylesheet" href="css/5cols.css" media="all">
+		<link rel="stylesheet" href="css/6cols.css" media="all">
+		<link rel="stylesheet" href="css/7cols.css" media="all">
+		<link rel="stylesheet" href="css/8cols.css" media="all">
+		<link rel="stylesheet" href="css/9cols.css" media="all">
+		<link rel="stylesheet" href="css/10cols.css" media="all">
+		<link rel="stylesheet" href="css/11cols.css" media="all">
+		<link rel="stylesheet" href="css/12cols.css" media="all">
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" media="all">
+		<link rel="stylesheet" href="css/style.css" media="all">
 		
 		<!-- js -->
-		<script src="../js/jquery-1.12.4.js" type="text/javascript"></script>
-		<script src="../js/jquery.mobile-1.4.5.js" type="text/javascript"></script>
-		<script src="../js/hammer.js" type="text/javascript"></script>
-		<script src="../js/functions.js" type="text/javascript"></script>
+		<script src="js/jquery-1.12.4.js" type="text/javascript"></script>
+		<script src="js/jquery.mobile-1.4.5.js" type="text/javascript"></script>
+		<script src="js/hammer.js" type="text/javascript"></script>
+		</script><script src="js/panzoom.js" type="text/javascript"></script>
+		<script src="js/functions.js" type="text/javascript"></script>
 
 	</head>
 
-	<body id="sliderBody">
+	<body>
 	
 		<div class="container slide">
 			
 			<!-- Chart -->
-			<div id="page1" class="full-page chart firstpage" data-role="page" data-prev="#page5" data-next="#page2">
+			<div id="page1" class="full-page chart" data-role="page" data-prev="" data-next="#page2">
 			
 				<div data-role="content">
 
@@ -63,11 +64,13 @@
 									<h3>Chart</h3>
 									<p style="font-size:0.9em;">Each chart recorded the designs in a collection by type, who made it, for whom, and with textile swatches. This ensured the ateliers’ work was evenly distributed and that the mannequins had time to change during daily presentations.</p>
 									<div class="tombstone">Dior Héritage Collection, Paris</div>
+									<img src="img/2/1.jpg" width="460" height="133" />
 								</div>
 							</div>
 						</div>
 						<div class="col span_3_of_5 top bottom panzoom">
-							<img src="img/2/1b.jpg" width="908" height="1024" alt="A column of black, blue, red and embroidered textile swatches pinned to graph paper with notes and pencil sketches of dresses. “Robes diner” is written in blue on the top left." />
+							<img src="img/2/1b.jpg" width="908" height="1024" />
+							<div class="pinch dark" style="bottom:86px;"></div>
 						</div>
 					</div>
 				
@@ -75,8 +78,8 @@
 				
 				<div class="buttons centre dark">
 					<ul>
-						<li><a data-ajax="false" title="Dress Landing Page" href="index.html"><img src="../img/home-black.png" alt="Home icon" width="60" height="55" /></a></li>
-						<li><a data-ajax="false" title="Back" href="dress2.html"><img src="../img/inner-black.png" alt="Back icon" width="60" height="55" /></a></li>
+						<li><a data-ajax="false" href="index.html"><img src="img/home-black.png" width="70" height="64" /></a></li>
+						<li><a data-ajax="false" href="dress2.html"><img src="img/inner-black.png" width="70" height="64" /></a></li>
 					</ul>
 				</div>
 			
@@ -99,7 +102,8 @@
 							</div>
 						</div>
 						<div class="col span_3_of_5 top bottom panzoom">
-							<img src="img/2/2.jpg" alt="Black and white photograph of a woman in the Nocturne dress, black gloves and a wide-brimmed black hat arranging flowers on a living room mantle." width="815.22" height="1024" style="margin-top:-40px;" />
+							<img src="img/2/2.jpg" width="815.22" height="1024" style="margin-top:-40px;" />
+							<div class="pinch dark" style="bottom:57px;"></div>
 						</div>
 					</div>
 				
@@ -107,8 +111,8 @@
 				
 				<div class="buttons centre">
 					<ul>
-						<li><a data-ajax="false" title="Dress Landing Page" href="index.html"><img src="../img/home-black.png" alt="Home icon" width="60" height="55" /></a></li>
-						<li><a data-ajax="false" title="Back" href="dress2.html"><img src="../img/inner-black.png" alt="Back icon" width="60" height="55" /></a></li>
+						<li><a data-ajax="false" href="index.html"><img src="img/home-black.png" width="70" height="64" /></a></li>
+						<li><a data-ajax="false" href="dress2.html"><img src="img/inner-black.png" width="70" height="64" /></a></li>
 
 					</ul>
 				</div>
@@ -130,7 +134,8 @@
 							</div>
 						</div>
 						<div class="col span_3_of_5 top bottom panzoom">
-							<img src="img/2/3.jpg" alt="Black and white photograph of a woman in the Nocturne dress, a black fur stole and a wide-brimmed black hat against a light-coloured curtain." width="815.22" height="1024" style="margin-top:-40px;" />
+							<img src="img/2/3.jpg" width="815.22" height="1024" style="margin-top:-40px;" />
+							<div class="pinch" style="bottom:378px;"></div>
 						</div>
 					</div>
 				
@@ -138,8 +143,8 @@
 				
 				<div class="buttons centre">
 					<ul>
-						<li><a data-ajax="false" title="Dress Landing Page" href="index.html"><img src="../img/home-grey.png" alt="Home icon" width="60" height="55" /></a></li>
-						<li><a data-ajax="false" title="Back" href="dress2.html"><img src="../img/inner-grey.png" alt="Back icon" width="60" height="55" /></a></li>
+						<li><a data-ajax="false" href="index.html"><img src="img/home-grey.png" width="70" height="64" /></a></li>
+						<li><a data-ajax="false" href="dress2.html"><img src="img/inner-grey.png" width="70" height="64" /></a></li>
 
 					</ul>
 				</div>
@@ -155,18 +160,18 @@
 					
 						<div class="col span_1_of_3 top">
 							<div class="section group two rel">
-								<img src="img/2/grid/DIOR_HERITAGE_ROM_TORONTO_29_HCAH_1948_NOCTURNE_V2.jpg" alt="Photographs of the Nocturne dress. Clockwise from top left: Photograph of the full dress on a dress form against a black background; detail image of the iridescent blue beads that cover the dress; detail image of the top on the dress form, with short sleeves and black cummerbund; detail image of the skirt; the inside of the skirt, with black lining and a “Christian Dior” label." style="height:507.5px!important;width:336px!important;" />
+								<img src="img/2/grid/DIOR_HERITAGE_ROM_TORONTO_29_HCAH_1948_NOCTURNE_V2.jpg" style="height:513px!important;width:340px!important;" />
 								<span>*</span>
 							</div>
 							<div class="section group one">
-								<img src="img/2/grid/ROM2017_15850_15.jpg" alt="Photographs of the Nocturne dress. Clockwise from top left: Photograph of the full dress on a dress form against a black background; detail image of the iridescent blue beads that cover the dress; detail image of the top on the dress form, with short sleeves and black cummerbund; detail image of the skirt; the inside of the skirt, with black lining and a “Christian Dior” label." style="height:247.38px!important;width:336px!important;" />
+								<img src="img/2/grid/ROM2017_15850_15.jpg" style="height:250px!important;width:340px!important;" />
 							</div>
 						</div>
 						
 						<div class="col span_1_of_3 top">
-							<div class="section group two light-grey scroll" style="height:507.5px!important;width:336px!important;">
+							<div class="section group two light-grey" style="height:513px!important;width:340px!important;">
 								<div class="inner">
-									<div class="caption">
+									<div class="caption" style="margin-top:30px;">
 										<p>Signy Eaton wore this ensemble as a hostess for dinners in her home, never as a guest. She wore the lapels down, not up as shown by Christian Dior.</p>
 										<ul>
 											<li>Bodice is beaded in radiating lines away from the midriff that is covered with a velvet cummerbund</li>
@@ -178,18 +183,18 @@
 								</div>
 							</div>
 							<div class="section group one rel">
-								<img src="img/2/grid/DIOR_HERITAGE_ROM_TORONTO_29_HCAH_1948_NOCTURNE_GP02.jpg" alt="Photographs of the Nocturne dress. Clockwise from top left: Photograph of the full dress on a dress form against a black background; detail image of the iridescent blue beads that cover the dress; detail image of the top on the dress form, with short sleeves and black cummerbund; detail image of the skirt; the inside of the skirt, with black lining and a “Christian Dior” label." style="height:247.38px!important;width:336px!important;" />
+								<img src="img/2/grid/DIOR_HERITAGE_ROM_TORONTO_29_HCAH_1948_NOCTURNE_GP02.jpg" style="height:250px!important;width:340px!important;" />
 								<span>*</span>
 							</div>
 						</div>
 						
 						<div class="col span_1_of_3 top">
 							<div class="section group two rel">
-								<img src="img/2/grid/DIOR_HERITAGE_ROM_TORONTO_29_HCAH_1948_NOCTURNE_GP05.jpg" alt="Photographs of the Nocturne dress. Clockwise from top left: Photograph of the full dress on a dress form against a black background; detail image of the iridescent blue beads that cover the dress; detail image of the top on the dress form, with short sleeves and black cummerbund; detail image of the skirt; the inside of the skirt, with black lining and a “Christian Dior” label." style="height:507.5px!important;width:336px!important;" />
+								<img src="img/2/grid/DIOR_HERITAGE_ROM_TORONTO_29_HCAH_1948_NOCTURNE_GP05.jpg" style="height:513px!important;width:340px!important;" />
 								<span>*</span>
 							</div>
 							<div class="section group one rel">
-								<img src="img/2/grid/DIOR_HERITAGE_ROM_TORONTO_29_HCAH_1948_NOCTURNE.jpg" alt="Photographs of the Nocturne dress. Clockwise from top left: Photograph of the full dress on a dress form against a black background; detail image of the iridescent blue beads that cover the dress; detail image of the top on the dress form, with short sleeves and black cummerbund; detail image of the skirt; the inside of the skirt, with black lining and a “Christian Dior” label." style="height:247.38px!important;width:336px!important;" />
+								<img src="img/2/grid/DIOR_HERITAGE_ROM_TORONTO_29_HCAH_1948_NOCTURNE.jpg" style="height:250px!important;width:340px!important;" />
 								<span>*</span>
 							</div>
 						</div>
@@ -200,15 +205,15 @@
 				
 				<div class="buttons centre">
 					<ul>
-						<li><a data-ajax="false" title="Dress Landing Page" href="index.html"><img src="../img/home-grey.png" alt="Home icon" width="60" height="55" /></a></li>
-						<li><a data-ajax="false" title="Back" href="dress2.html"><img src="../img/inner-grey.png" alt="Back icon" width="60" height="55" /></a></li>
+						<li><a data-ajax="false" href="index.html"><img src="img/home-grey.png" width="70" height="64" /></a></li>
+						<li><a data-ajax="false" href="dress2.html"><img src="img/inner-grey.png" width="70" height="64" /></a></li>
 					</ul>
 				</div>
 				
 			</div>
 			
 			<!-- Detail image grid -->
-			<div id="page5" class="grid lastpage" data-role="page" data-prev="#page4" data-next="#page1">
+			<div id="page5" class="grid" data-role="page" data-prev="#page4" data-next="">
 			
 				<div data-role="content">
 				
@@ -216,9 +221,9 @@
 					
 						<div class="col span_1_of_3 top">
 							<div class="section group one">
-								<img src="img/2/grid2/ROM2017_15813_18.jpg" alt="Photographs of the Nocturne dress. Clockwise from top left: The top of the skirt, unzipped and folded open; the skirt turned inside out revealing grey lining against a black background; detail image of the beading with a measuring tape cut off at the 14 cm mark; detail image of irregular, faceted beads framed by a millimeter scale; the hem of the skirt folded to show the marked lines for beading on the reverse." style="height:247.38px!important;width:336px!important;" />
+								<img src="img/2/grid2/ROM2017_15813_18.jpg" style="height:250px!important;width:340px!important;" />
 							</div>
-							<div class="section group one light-grey scroll" style="height:247.38px!important;width:336px!important;">
+							<div class="section group one light-grey" style="height:250px!important;width:340px!important;">
 								<div class="inner">
 									<div class="caption" style="margin-top:11px;">
 										<p><em>Right</em>: Detail of irregular, faceted beads.</p>
@@ -227,21 +232,21 @@
 								</div>
 							</div>
 							<div class="section group one">
-								<img src="img/2/grid2/ROM2017_15813_15.jpg" alt="Photographs of the Nocturne dress. Clockwise from top left: The top of the skirt, unzipped and folded open; the skirt turned inside out revealing grey lining against a black background; detail image of the beading with a measuring tape cut off at the 14 cm mark; detail image of irregular, faceted beads framed by a millimeter scale; the hem of the skirt folded to show the marked lines for beading on the reverse." style="height:247.38px!important;width:336px!important;" />
+								<img src="img/2/grid2/ROM2017_15813_15.jpg" style="height:250px!important;width:340px!important;" />
 							</div>
 						</div>
 						
 						<div class="col span_1_of_3 top">
 							<div class="section group one">
-								<img src="img/2/grid2/ROM2017_15813_17.jpg" alt="Photographs of the Nocturne dress. Clockwise from top left: The top of the skirt, unzipped and folded open; the skirt turned inside out revealing grey lining against a black background; detail image of the beading with a measuring tape cut off at the 14 cm mark; detail image of irregular, faceted beads framed by a millimeter scale; the hem of the skirt folded to show the marked lines for beading on the reverse." style="height:247.38px!important;width:336px!important;" />
+								<img src="img/2/grid2/ROM2017_15813_17.jpg" style="height:250px!important;width:340px!important;" />
 							</div>
 							<div class="section group two rel">
-								<img src="img/2/grid2/ROM2017_15813_14.jpg" alt="Photographs of the Nocturne dress. Clockwise from top left: The top of the skirt, unzipped and folded open; the skirt turned inside out revealing grey lining against a black background; detail image of the beading with a measuring tape cut off at the 14 cm mark; detail image of irregular, faceted beads framed by a millimeter scale; the hem of the skirt folded to show the marked lines for beading on the reverse." style="height:507.5px!important;width:336px!important;" />
+								<img src="img/2/grid2/ROM2017_15813_14.jpg" style="height:513px!important;width:340px!important;" />
 							</div>
 						</div>
 						
 						<div class="col span_1_of_3 top">
-							<div class="section group one light-grey rel" style="height:247.38px!important;width:336px!important;">
+							<div class="section group one light-grey rel" style="height:250px!important;width:340px!important;">
 								<div class="inner">
 									<div class="caption" style="width:79%;margin-left: 5px;">
 										<p><em>Left</em>: The skirt has only one seam in the centre back. Bias pieces are inset at the back waist.</p>									
@@ -250,7 +255,7 @@
 
 							</div>
 							<div class="section group two">
-								<img src="img/2/grid2/ROM2017_15813_10.jpg" alt="Photographs of the Nocturne dress. Clockwise from top left: The top of the skirt, unzipped and folded open; the skirt turned inside out revealing grey lining against a black background; detail image of the beading with a measuring tape cut off at the 14 cm mark; detail image of irregular, faceted beads framed by a millimeter scale; the hem of the skirt folded to show the marked lines for beading on the reverse." style="height:507.5px!important;width:336px!important;" />
+								<img src="img/2/grid2/ROM2017_15813_10.jpg" style="height:513px!important;width:340px!important;" />
 							</div>
 						</div>
 						
@@ -260,8 +265,8 @@
 				
 				<div class="buttons centre">
 					<ul>
-						<li><a data-ajax="false" title="Dress Landing Page" href="index.html"><img src="../img/home-grey.png" alt="Home icon" width="60" height="55" /></a></li>
-						<li><a data-ajax="false" title="Back" href="dress2.html"><img src="../img/inner-grey.png" alt="Back icon" width="60" height="55" /></a></li>
+						<li><a data-ajax="false" href="index.html"><img src="img/home-black.png" width="70" height="64" /></a></li>
+						<li><a data-ajax="false" href="dress2.html"><img src="img/inner-black.png" width="70" height="64" /></a></li>
 					</ul>
 				</div>
 				
@@ -281,8 +286,8 @@
 		
 		<div id="resize">
 			<ul>
-				<li><a title="Increase font size" href="#">A</a></li>
-				<li><a title="Decrease font size" class="active" href="#">A</a></li>
+				<li><a href="#large">A</a></li>
+				<li><a class="active" href="#small">A</a></li>
 			</ul>
 		</div>
 		

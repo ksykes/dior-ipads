@@ -1,34 +1,24 @@
+var panzoomRunning = false;
+
 var options = {pointers: 1};
 
 function ipadSwipe() {
-	var sliderBody = document.getElementById('sliderBody');
-
-	new Hammer(sliderBody, options).on('swipeleft', function (ev) {
+	new Hammer(document, options).on('swipeleft', function(ev) {
 		ev.preventDefault();
 		var nextpage = $.mobile.activePage.next('[data-role="page"]');
-		var firstpage = $.mobile.activePage.siblings('.firstpage');
-		if (nextpage.length) {
-			$.mobile.changePage(nextpage, { transition: "slide", reverse: false }, true, true);
+		if ((nextpage.length > 0) && (!panzoomRunning)) {
+			$.mobile.changePage(nextpage, {transition: "slide", reverse: false}, true, true);
 			$('#menu li.active').removeClass('active').next().addClass('active');
-		} else {
-			$.mobile.changePage(firstpage, { transition: "slide", reverse: false }, true, true);
-			$('#menu li.active').removeClass('active');
-			$('#menu li:first-child').addClass('active');
 		}
 	});
-
-	new Hammer(sliderBody, options).on('swiperight', function (ev) {
+	
+	new Hammer(document, options).on('swiperight', function(ev) {
 		ev.preventDefault();
-		var prevpage = $.mobile.activePage.prev('[data-role="page"]');
-		var lastpage = $.mobile.activePage.siblings('.lastpage');
-		if (prevpage.length) {
-			$.mobile.changePage(prevpage, { transition: "slide", reverse: true }, true, true);
-			$('#menu li.active').removeClass('active').prev().addClass('active');
-		} else {
-			$.mobile.changePage(lastpage, { transition: "slide", reverse: true }, true, true);
-			$("#menu li.active").removeClass("active");
-			$("#menu li:last-child").addClass("active");
-		}
+        var prevpage = $.mobile.activePage.prev('[data-role="page"]');
+		if ((prevpage.length > 0) && (!panzoomRunning)) {
+            $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
+            $('#menu li.active').removeClass('active').prev().addClass('active');
+        }
 	});
 }
 
@@ -61,6 +51,23 @@ $(document).ready(function() {
           $('body').removeClass('large');
 		  localStorage.removeItem('fontSize');
     });
+	
+	$('.panzoom').panzoom({
+		minScale: 1,
+		maxScale: 5,
+		panOnlyWhenZoomed: true,
+		onStart: function() {
+			var panzoomRunning = true;
+		},
+		onEnd: function() {
+			$(this).panzoom('reset', {
+				animate: true,
+			});
+			setTimeout(function() {
+				var panzoomRunning = false;
+			}, 500);
+		}
+	});
 	
 });
 
