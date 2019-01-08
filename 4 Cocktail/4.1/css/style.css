@@ -178,6 +178,7 @@ h2 {
 	font-size: 1.2em;
 	font-family: WhitneyBookSC;
 	color: #D8DAD9;
+	margin-top: 8px;
 }
 
 h3 {
@@ -203,7 +204,7 @@ html body .ui-group-theme-a a:visited {
 }
 
 .inner {
-	padding: 20px 30px 20px 20px;
+	padding: 0 30px 20px 20px;
 	position: relative;
 	z-index: 20;
 }
@@ -484,9 +485,9 @@ html body .ui-group-theme-a a:visited {
 	padding-top: 8.5px;
 }
 
-#list ul li.double {
+/* #list ul li.double {
 	height: 70px;
-}
+} */
 
 #list .line {
     position: absolute;

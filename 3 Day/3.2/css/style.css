@@ -178,6 +178,7 @@ h2 {
 	font-size: 1.2em;
 	font-family: WhitneyBookSC;
 	color: #D8DAD9;
+	margin-top: 8px;
 }
 
 h3 {
@@ -575,7 +576,7 @@ html body .ui-group-theme-a a:visited {
 .slide .caption {
 	width: 92%;
 	margin: 15px auto 0;
-	font-size: 1.15em;
+	font-size: 1em;
 	line-height: 1.3;
 }
 

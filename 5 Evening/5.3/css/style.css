@@ -178,6 +178,7 @@ h2 {
 	font-size: 1.2em;
 	font-family: WhitneyBookSC;
 	color: #D8DAD9;
+	margin-top: 8px;
 }
 
 h3 {
@@ -209,7 +210,7 @@ html body .ui-group-theme-a a:visited {
 }
 
 .resize .inner {
-	padding: 5px 30px 20px 20px;
+	padding: 0 30px 20px 20px;
 }
 
 #page5 .inner {
@@ -233,7 +234,7 @@ html body .ui-group-theme-a a:visited {
 
 .tombstone {
 	font-family: 'WhitneyBookSC';
-	margin-top: 20px;
+	/* margin-top: 20px; */
 	z-index: 5;
 	text-transform: lowercase;
 	line-height: 1;
@@ -499,7 +500,7 @@ html body .ui-group-theme-a a:visited {
 #list .line {
     position: absolute;
     width: 1px;
-    top: 38px;
+    top: 16px;
     left: 0;
     height: 63%;
 }

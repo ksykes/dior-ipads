@@ -178,6 +178,7 @@ h2 {
 	font-size: 1.2em;
 	font-family: WhitneyBookSC;
 	color: #D8DAD9;
+	margin-top: 8px;
 }
 
 h3 {
@@ -480,13 +481,13 @@ html body .ui-group-theme-a a:visited {
 	text-align: right;
 }
 
-#list ul li {
+/* #list ul li {
 	padding: 8px 0;
-}
+} */
 
-#list > div:nth-child(2) ul li {
+/* #list > div:nth-child(2) ul li {
 	padding-top: 8.5px;
-}
+} */
 
 #list ul li.double {
 	height: 70px;

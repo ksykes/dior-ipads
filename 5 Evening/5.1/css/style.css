@@ -178,6 +178,7 @@ h2 {
 	font-size: 1.2em;
 	font-family: WhitneyBookSC;
 	color: #D8DAD9;
+	margin-top: 8px;
 }
 
 h3 {
@@ -395,7 +396,7 @@ html body .ui-group-theme-a a:visited {
 
 .single #header h1 ,
 #header .span_1_of_3:nth-child(2) h1 {
-	margin-top: 115px;
+	margin-top: 102px;
 }
 
 #header .tombstone {
