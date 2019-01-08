@@ -203,7 +203,7 @@ html body .ui-group-theme-a a:visited {
 }
 
 .inner {
-	padding: 35px 30px 20px 20px;
+	padding: 52px 30px 20px 20px;
 	position: relative;
 	z-index: 20;
 }
@@ -431,7 +431,7 @@ html body .ui-group-theme-a a:visited {
 
 /* inner landing page */
 .inside > div > div > .section:first-child img {
-	margin: 76px auto 25px;
+	margin: 46px auto 25px;
 }
 
 .inside > div > div > .section:first-child > .col {
