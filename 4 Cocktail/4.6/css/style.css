@@ -385,7 +385,7 @@ html body .ui-group-theme-a a:visited {
 
 #header h1 {
 	margin-top: 100px;
-	line-height: 15px;
+	line-height: 32px;
 }
 
 .single #header h1 ,
@@ -440,7 +440,7 @@ html body .ui-group-theme-a a:visited {
 .inside h1 {
 	font-size: 2.6em;
 	margin-top: 60px;
-	line-height: 15px;
+	line-height: 32px;
 }
 
 .inside h2 {
@@ -596,13 +596,28 @@ html body .ui-group-theme-a a:visited {
 #menu {
     position: absolute;
     z-index: 1000;
-    bottom: 45px;
+    bottom: 50px;
     right: 0;
     left: 0;
-    width: auto;
+    width: 270px;
     margin: 0 auto;
     opacity: 0.7;
-	text-align: center;
+}
+
+#menu.two {
+	width: 90px;
+}
+
+#menu.three {
+	width: 135px;
+}
+
+#menu.four {
+	width: 180px;
+}
+
+#menu.five {
+	width: 225px;
 }
 
 #menu ul {
@@ -610,7 +625,8 @@ html body .ui-group-theme-a a:visited {
 }
 
 #menu ul li {
-	display: inline-block;
+	display: inline;
+	float: left;
 	padding: 0 15px;
 }
 
@@ -619,13 +635,12 @@ html body .ui-group-theme-a a:visited {
 	height: 15px;
 	border-radius: 100%;
 	background-color: #000000;
-	box-shadow: 0 0 10px 1px rgba(216,218,217,0.8);
+	box-shadow: 0px 0px 3px rgba(216,218,217,0.5);
 }
 
 #menu ul li.active div {
-    background-color: #D8DAD9;
-    border: 2px solid rgba(0,0,0,0.4);
-    margin-bottom: -2px;
+	background-color: #D8DAD9;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
 }
 
 /* full-page images */
@@ -730,4 +745,28 @@ div.ui-overlay-a, div.ui-page-theme-a {
 
 .ui-page {
 	-webkit-backface-visibility: hidden;
+} 
+
+/*
+* === panzoom ===
+*/
+
+.panzoom {
+	z-index: 50;
+	position: relative;
+}
+
+.panzoom .pinch {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background: url(pinch-zoom.png) no-repeat 0 0;
+    height: 108px;
+    width: 150px;
+    opacity: 0.5;
+}
+
+.panzoom .pinch.dark {
+	background: url(pinch-zoom-dark.png) no-repeat 0 0;
 }
