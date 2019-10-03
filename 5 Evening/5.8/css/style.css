@@ -263,7 +263,7 @@ html body .ui-group-theme-a a:visited {
 .buttons {
     position: absolute;
     top: 20px;
-    right: 70px;
+    right: 20px;
     font-size: 3em;
 	z-index: 999;
 	opacity: 0.6;
@@ -384,8 +384,8 @@ html body .ui-group-theme-a a:visited {
 }
 
 #header h1 {
-	margin-top: 100px;
-	line-height: 15px;
+	margin-top: 90px!important;
+	line-height: 42px;
 }
 
 .single #header h1 ,
@@ -440,7 +440,7 @@ html body .ui-group-theme-a a:visited {
 .inside h1 {
 	font-size: 2.6em;
 	margin-top: 60px;
-	line-height: 15px;
+	line-height: 32px;
 }
 
 .inside h2 {
@@ -596,28 +596,13 @@ html body .ui-group-theme-a a:visited {
 #menu {
     position: absolute;
     z-index: 1000;
-    bottom: 50px;
+    bottom: 45px;
     right: 0;
     left: 0;
-    width: 270px;
+    width: auto;
     margin: 0 auto;
     opacity: 0.7;
-}
-
-#menu.two {
-	width: 90px;
-}
-
-#menu.three {
-	width: 135px;
-}
-
-#menu.four {
-	width: 180px;
-}
-
-#menu.five {
-	width: 225px;
+	text-align: center;
 }
 
 #menu ul {
@@ -625,8 +610,7 @@ html body .ui-group-theme-a a:visited {
 }
 
 #menu ul li {
-	display: inline;
-	float: left;
+	display: inline-block;
 	padding: 0 15px;
 }
 
@@ -635,12 +619,13 @@ html body .ui-group-theme-a a:visited {
 	height: 15px;
 	border-radius: 100%;
 	background-color: #000000;
-	box-shadow: 0px 0px 3px rgba(216,218,217,0.5);
+	box-shadow: 0 0 10px 1px rgba(216,218,217,0.8);
 }
 
 #menu ul li.active div {
-	background-color: #D8DAD9;
-	box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+    background-color: #D8DAD9;
+    border: 2px solid rgba(0,0,0,0.4);
+    margin-bottom: -2px;
 }
 
 /* full-page images */
@@ -685,7 +670,7 @@ html body .ui-group-theme-a a:visited {
 .grid .top > .section {
     display: block;
     float: left;
-    margin: 1% 0 3.4% 0.8%;
+    margin: 0.4% 0 3.4% 0.8%;
 	overflow: hidden;
 }
 
@@ -743,26 +728,6 @@ div.ui-overlay-a, div.ui-page-theme-a {
 	text-shadow: none;
 }
 
-/*
-* === panzoom ===
-*/
-
-.panzoom {
-	z-index: 50;
-	position: relative;
-}
-
-.panzoom .pinch {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-    background: url(pinch-zoom.png) no-repeat 0 0;
-    height: 108px;
-    width: 150px;
-    opacity: 0.5;
-}
-
-.panzoom .pinch.dark {
-	background: url(pinch-zoom-dark.png) no-repeat 0 0;
+.ui-page {
+	-webkit-backface-visibility: hidden;
 }
