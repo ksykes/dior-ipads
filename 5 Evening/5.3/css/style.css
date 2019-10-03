@@ -384,8 +384,8 @@ html body .ui-group-theme-a a:visited {
 }
 
 #header h1 {
-	margin-top: 100px;
-	line-height: 15px;
+	margin-top: 80px;
+	line-height: 42px;
 }
 
 .single #header h1 ,
@@ -440,11 +440,12 @@ html body .ui-group-theme-a a:visited {
 .inside h1 {
 	font-size: 2.6em;
 	margin-top: 60px;
-	line-height: 15px;
+	line-height: 32px;
 }
 
 .inside h2 {
 	font-size: 1.5em;
+	line-height: 1.8em;
 }
 
 .inside .credit {
