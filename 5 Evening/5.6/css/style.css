@@ -335,7 +335,7 @@ html body .ui-group-theme-a a:visited {
 /* homepage */
 #dresses > .col,
 #dresses > a > img {
-	padding: 53px 0 2px;
+	padding: 253px 0 2px;
 }
 
 #dresses img {
@@ -385,12 +385,12 @@ html body .ui-group-theme-a a:visited {
 
 #header h1 {
 	margin-top: 100px;
-	line-height: 15px;
+	line-height: 32px;
 }
 
 .single #header h1 ,
 #header .span_1_of_3:nth-child(2) h1 {
-	margin-top: 115px;
+	margin-top: 100px;
 }
 
 #header .tombstone {
@@ -440,7 +440,7 @@ html body .ui-group-theme-a a:visited {
 .inside h1 {
 	font-size: 2.6em;
 	margin-top: 60px;
-	line-height: 15px;
+	line-height: 32px;
 }
 
 .inside h2 {
