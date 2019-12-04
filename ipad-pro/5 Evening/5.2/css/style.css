@@ -1,0 +1,733 @@
+/* ==========================================================================
+							Dior interactive CSS
+							*** strike a pose ***
+========================================================================== */
+
+/*
+* === fonts in your face ===
+*/
+
+@font-face {
+	font-family: 'WhitneyLightItalic';
+	src: url('fonts/WhitneyLightItalic.ttf') format('truetype');
+}
+
+
+@font-face {
+	font-family: 'WhitneyMedium';
+	src: url('fonts/whitney-medium.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'WhitneyMediumItalic';
+	src: url('fonts/whitney-mediumitalic.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'WhitneyBook';
+	src: url('fonts/Whitney-Book.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'WhitneyBookSC';
+	src: url('fonts/whitney-booksc.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'WhitneyBookItalic';
+	src: url('fonts/whitney-bookitalic.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Chronicle';
+	src: url('fonts/chronicleg1.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'ChronicleItalic';
+	src: url('fonts/chronicleg1-italic.otf') format('opentype');
+}
+
+/*
+* === html elements ===
+*/
+
+html, 
+body,
+.ui-mobile, 
+.ui-mobile body {
+    font-size: 113%;
+	line-height: 1.3;
+	font-family: 'WhitneyMedium', sans-serif;
+	color: #D8DAD9; 
+	height: 1024px;
+	width: 100%;
+	position: fixed;
+	overflow: hidden;
+}
+
+body.large {
+	font-size: 135%
+}
+
+.container {
+	height: 1024px;
+	width: 1366px;
+	position: relative;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.2em;
+}
+
+.section {
+	overflow-y: hidden;
+	max-height: 1024px;
+}
+
+.col {
+	overflow: hidden;
+}
+
+.ui-loader {
+	display:none !important;
+}
+
+.ui-icon-loading {
+	background:none !important;
+}
+
+/*
+* === helper classes ===
+*/
+
+.centre {
+	text-align: center;
+}
+
+.rel {
+	position: relative;
+}
+
+.col.top,
+.col.top .col {
+	margin-top: 0;
+}
+
+.col.bottom,
+.col.bottom .col {
+	margin-bottom: 0;
+}
+
+.col.one {
+	height: 330px;
+}
+
+.col.two {
+	height: 677px;
+}
+
+.black {
+	background-color: #000000;
+}
+
+.light-grey {
+	background-color: #D8DAD9;
+	color: #333F48;
+}
+
+.medium-grey {
+	background-color: #666e75;
+}
+
+.dark-grey {
+	background-color: #333F48;
+	color: #D8DAD9;
+}
+
+/*
+* === text style ===
+*/
+
+h1 {
+	font-weight: normal;
+	font-size: 2.7em;
+	font-family: 'WhitneyLightItalic', sans-serif;
+	line-height: 1;
+	margin-bottom: 0;
+	color: #D8DAD9;
+}
+
+
+h1 span {
+	font-size: 0.7em;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 1.6em;
+	font-family: WhitneyBookSC;
+	color: #D8DAD9;
+}
+
+h3 {
+	font-size: 1.55em;
+	font-family: 'WhitneyBook', sans-serif;
+	color: #3E8493;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+h3 em {
+	font-family: 'WhitneyBookItalic';
+}
+
+a,
+.ui-page-theme-a a:visited, 
+html .ui-bar-a a:visited, 
+html .ui-body-a a:visited, 
+html body .ui-group-theme-a a:visited {
+	color: #D8DAD9;
+	text-decoration: none;
+	font-weight: normal!important;
+}
+
+.inner {
+	padding: 20px;
+	position: relative;
+	z-index: 20;
+}
+
+.inner:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.credit {
+    position: absolute;
+    left: 2px;
+    bottom: 205px;
+    font-size: 0.7em;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+}
+
+.tombstone {
+	font-family: 'WhitneyBookSC';
+	margin-top: 30px;
+	z-index: 5;
+	text-transform: lowercase;
+	line-height: 1.1;
+}
+
+.tombstone p {
+	margin-bottom: 5px;
+}
+
+/* resize rules */
+::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.4); 
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.large .resize,
+.large .grid .top > .section.resize {
+	overflow-y: scroll;
+}
+
+.large #list.resize {
+	max-height: 360px;
+}
+
+/*
+* === buttons & ui ===
+*/
+
+.buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3em;
+	z-index: 999;
+	opacity: 0.6;
+	line-height: 1;
+}
+
+.buttons ul,
+#resize ul {
+	list-style: none;
+}
+
+.buttons ul li:first-child {
+	padding-bottom: 25px;
+}
+
+.buttons a {
+	color: #D8DAD9;
+}
+
+.buttons img {
+	margin: 0 auto;
+}
+
+#resize {
+	position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 3em;
+	z-index: 999;
+	line-height: 1;
+}
+
+#resize li {
+	display: inline-block;
+}
+
+#resize li a {
+	color: #D8DAD9;
+	opacity: 0.7;
+	padding-right: 3px;
+}
+
+#resize li:nth-child(2) a {
+	font-size: 0.65em;
+	opacity: 0.4;
+	pointer-events: none;
+	cursor: default;
+}
+
+.large #resize li:first-child a {
+	opacity: 0.4;
+	pointer-events: none;
+}
+	
+.large #resize li:nth-child(2) a {
+	opacity: 0.7;
+	pointer-events: auto;
+}
+
+.slide#resize, 
+.slide.buttons {
+	opacity: 0.8;
+}
+
+/*
+* === customize sections ===
+*/
+
+/* homepage */
+#dresses > .col,
+#dresses > a > img {
+	padding: 53px 0 2px;
+}
+
+#dresses img {
+	margin: 0 auto;
+}
+
+#header {
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+	color: #333F48;
+	background: url('hat-home.png') no-repeat 0 0;
+}
+
+#header > .col:first-child .inner {
+	margin-left: 73px;
+}
+
+#header > .span_1_of_2:nth-child(2) .inner,
+#header > .col:nth-child(3) .inner {
+	text-align: right;
+	margin-right: 73px;
+}
+
+#header .top {
+    position: absolute;
+    width: 908px;
+    height: 145px;
+	top: -54px;
+}
+
+#header .right {
+	right: -20px;
+	border-radius: 0 0 0 100%;
+	transform: rotate(-12deg);
+}
+
+#header .left {
+	left: -20px;
+	border-radius: 0 0 100% 0;
+	transform: rotate(12deg);
+}
+
+#header a {
+	display: block;
+}
+
+#header h1 {
+	margin-top: 90px!important;
+	line-height: 42px;
+}
+
+.single #header h1 ,
+#header .span_1_of_3:nth-child(2) h1 {
+	margin-top: 115px;
+}
+
+#header .tombstone {
+	margin-top: 8px;
+}
+
+.home .line {
+	position: absolute;
+	width: 15px;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	height: 903.5px;
+	background-color: #ffffff;
+}
+
+.home .line.left {
+	margin: 0;
+	left: 441px;
+	right: auto;
+	height: 889.5px;
+	border-bottom-left-radius: 3px;
+}
+
+.home .line.right {
+	margin: 0;
+	right: 441px;
+	left: auto;
+	height: 889.5px;
+	border-bottom-right-radius: 3px;
+}
+
+/* inner landing page */
+.inside > div > div > .section:first-child img {
+	margin: 76px auto 25px;
+}
+
+.inside > div > div > .section:first-child > .col {
+	height: 795px;
+}
+
+.inside > div > div > .section:first-child > .col.light-grey {
+	background: #D8DAD9 url('hat-inside.png') no-repeat 0px 647px;
+}
+
+.inside h1 {
+	font-size: 2.6em;
+	margin-top: 60px;
+	line-height: 32px;
+}
+
+.inside h2 {
+	font-size: 1.5em;
+}
+
+.inside .credit {
+	bottom: 226px;
+}
+
+#list {
+	margin: 5px 0 0 15px;
+}
+
+#list .inner {
+	padding-bottom: 0;
+}
+
+#list ul {
+	font-family: 'WhitneyMedium';
+	list-style: none;
+	font-size: 1.31em;
+}
+
+#list ul .span_1_of_4 {
+	text-transform: lowercase;
+}
+
+#list > div:first-child ul {
+	font-family: 'WhitneyBookSC';
+	text-align: right;
+}
+
+#list ul li {
+	padding: 8px 0;
+}
+
+#list > div:nth-child(2) ul li {
+	padding-top: 8.5px;
+}
+
+#list ul li.double {
+	height: 70px;
+}
+
+#list .line {
+    position: absolute;
+    width: 1px;
+    top: 38px;
+    left: 0;
+    height: 63%;
+}
+
+#soundbite {
+	width: 80%;
+	padding: 88px 35px 0 40px;
+	line-height: 38px;
+}
+
+#soundbite .quote {
+	font-size: 1.55em;
+	font-family: 'ChronicleItalic';
+}
+
+
+#soundbite .attribution {
+	font-family: 'WhitneyBookSC';
+	text-transform: lowercase;
+}
+
+.inside .links,
+.inside .links .bottom {
+	height: 224px;
+}
+
+.inside .links img {
+	border-radius: 100%;
+	width: 85%;
+	height: 85%;
+	margin: 6% auto 0;
+	box-shadow: 0px 0px 15px #D8DAD9;
+}
+
+.inside .links.two .bottom:first-child {
+	margin-left: 455.3px;
+}
+
+.inside .links.three .bottom:first-child {
+	margin-left: 341.5px;
+}
+
+.inside .links.four .bottom:first-child {
+	margin-left: 227.7px;
+}
+
+.inside .links.five .bottom:first-child {
+	margin-left: 114px;
+}
+
+.inside .line.horizontal {
+    position: absolute;
+    width: 1366px;
+    bottom: 221px;
+    left: 0;
+    height: 15px;
+    background-color: #ffffff;
+}
+
+.inside .line.vertical {
+    position: absolute;
+    width: 15px;
+    top: 0;
+    left: 444px;
+    height: 795px;
+    background-color: #ffffff;
+}
+
+.inside .buttons,
+.slide .buttons {
+	top: 27px;
+}
+
+
+/* slider */
+.container.slide {
+	background-color: #ffffff;
+}
+
+.slide .caption {
+	width: 92%;
+	margin: 15px auto 0;
+	font-size: 1.15em;
+	line-height: 1.3;
+}
+
+.slide .grid .caption,
+.slide .floating .caption {
+	margin-top: 50px;
+}
+
+.slide .caption p {
+	margin-bottom: 10px;
+}
+
+.slide .caption ul {
+	padding-left: 25px;
+}
+
+.slide .caption ul li {
+	padding: 1px 0;
+}
+
+#menu {
+    position: absolute;
+    z-index: 1000;
+    bottom: 45px;
+    right: 0;
+    left: 0;
+    width: auto;
+    margin: 0 auto;
+    opacity: 0.7;
+	text-align: center;
+}
+
+#menu ul {
+	list-style: none;
+}
+
+#menu ul li {
+	display: inline-block;
+	padding: 0 15px;
+}
+
+#menu ul li div {
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background-color: #000000;
+	box-shadow: 0 0 10px 1px rgba(216,218,217,0.8);
+}
+
+#menu ul li.active div {
+    background-color: #D8DAD9;
+    border: 2px solid rgba(0,0,0,0.4);
+    margin-bottom: -2px;
+}
+
+/* full-page images */
+.full-page .col.light-grey {
+	height: 1024px;
+}
+
+.full-page .col.light-grey.span_2_of_5 {
+	background: #D8DAD9 url('hat-top.png') no-repeat 0 0;
+}
+
+.full-page .col.light-grey.span_1_of_4 {
+	background: #D8DAD9 url('hat-top.png') no-repeat 0 0;
+}
+
+.full-page .col.light-grey.span_1_of_4 {
+	background: #D8DAD9 url('hat-top-4.png') no-repeat 0 0;
+}
+
+.full-page .col.light-grey.span_1_of_3 {
+	background: #D8DAD9 url('hat-top-3.png') no-repeat 0 0;
+}
+
+.full-page .col.light-grey.span_1_of_3 {
+	background: #D8DAD9 url('hat-top-3.png') no-repeat 0 0;
+}
+
+.full-page .col.light-grey .inner {
+	margin-top: 150px;
+}
+
+.full-page.chart .col.light-grey img {
+	margin: 15px auto;
+}
+
+
+.buttons.dark a {
+	color: #000000;
+}
+
+/* image grid */
+.grid .top > .section {
+    display: block;
+    float: left;
+    margin: 0.4% 0 3.4% 0.8%;
+	overflow: hidden;
+}
+
+.grid .col.top .section:first-child {
+	margin-top: 0;
+}
+
+.grid.col.top .section:last-child {
+	margin-bottom: 0;
+}
+
+.grid .col.top:first-child .section {
+	margin-left: 0;
+}
+
+.grid > div > .section > .col:first-child .col {
+	width: 100%;
+}
+
+.grid .col span {
+    position: absolute;
+    bottom: -15px;
+    right: 7px;
+    font-size: 38px;
+    opacity: 0.7;
+}
+
+/* detail closeup - landscape */
+.floating {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 90;
+	width: 448.05px;
+	height: 330px;
+	overflow: hidden;
+}
+
+.floating.right {
+	right: 0;
+	left: auto;
+}
+
+/*
+* === jquery mobile overrides ===
+*/
+
+.ui-content {
+	padding: 0;
+}
+
+div.ui-overlay-a, div.ui-page-theme-a {
+	background-color: transparent;
+	color: #D8DAD9;
+	text-shadow: none;
+}
+
+.ui-page {
+	-webkit-backface-visibility: hidden;
+}
