@@ -11,7 +11,7 @@
 		<!-- Always force latest IE rendering engine & Chrome Frame -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title>Paimpolaise Images | 4.3</title>
+		<title>Duchesse Images | 5.8</title>
 		<meta name="description" content="Homepage of the Dior gallery interactive">
 
 		<meta http-equiv="cleartype" content="on">
@@ -42,7 +42,7 @@
 		<script src="js/jquery-1.12.4.js" type="text/javascript"></script>
 		<script src="js/jquery.mobile-1.4.5.js" type="text/javascript"></script>
 		<script src="js/hammer.js" type="text/javascript"></script>
-		</script><script src="js/panzoom.js" type="text/javascript"></script>
+		</script><script src="js.js" type="text/javascript"></script>
 		<script src="js/functions.js" type="text/javascript"></script>
 
 	</head>
@@ -52,7 +52,7 @@
 		<div class="container slide">
 			
 			<!-- Press Sketch -->
-			<div id="page1" class="full-page" data-role="page" data-prev="" data-next="#page2">
+			<div id="page1" class="full-page" data-role="page" data-prev="#page5" data-next="#page2">
 			
 				<div data-role="content">
 
@@ -62,12 +62,12 @@
 							<div class="inner">
 								<div class="caption">
 									<h3>Croquis de presse</h3>
-									<p>Croquis de presse du modèle <em>Paimpolaise</em>, d’après Paimpol, un village côtier de Bretagne célèbre pour ses jolies femmes en costume traditionnel, sa gastronomie et son folklore</p>
+									<p>Croquis de <em>Duchesse</em>, un modèle emblématique de la ligne <em>Ciseaux</em> de la collection <em>Milieu du siècle</em>.</p>
 									<div class="tombstone">Collection Dior Héritage, Paris</div>
 								</div>
 							</div>
 						</div>
-						<div class="col span_3_of_5 top bottom panzoom">
+						<div class="col span_3_of_5 top bottom">
 							<img src="img/1/1.jpg" width="815.22" height="1024" style="margin-top:-50px;" />
 						</div>
 					</div>
@@ -93,15 +93,17 @@
 
 							<div class="inner">
 								<div class="caption">
-									<h3>Charte</h3>
-									<p style="font-size:0.9em;">Toutes les chartes mentionnaient les modèles de chaque collection par catégorie, le nom des personnes les ayant réalisés, le nom des mannequins, et comprenaient des échantillons de tissu. On pouvait ainsi répartir équitablement le travil dans les ateliers et les mannequins avaient le temps de se changer lors des présentations quotidiennes.</p>
+									<h3>Page d’échantillons</h3>
+									<p>Chaque modèle a sa page qui décrit la tenue, l’atelier et la cliente. Le travail est donc également réparti les ateliers
+									et les mannequins ont le temps de se changer entre les présentations.</p>
 									<div class="tombstone">Collection Dior Héritage, Paris</div>
-									<img src="img/1/2.jpg" width="460" height="147" />
+									<img src="img/1/2b.jpg" width="420" height="84" />
+									<img src="img/1/2c.jpg" width="130" height="320" />
 								</div>
 							</div>
 						</div>
-						<div class="col span_3_of_5 top bottom panzoom">
-							<img src="img/1/2b.jpg" width="908" height="1024" />
+						<div class="col span_3_of_5 top bottom">
+							<img src="img/1/2.jpg" width="908" height="1024" />
 						</div>
 					</div>
 				
@@ -116,22 +118,26 @@
 			
 			</div>
 			
-			<!-- Detail closeup landscape -->
-			<div id="page3" class="landscape" data-role="page" data-prev="#page2" data-next="#page4">
+			<!-- Single detail -->
+			<div id="page3" class="full-page" data-role="page" data-prev="#page2" data-next="#page4">
 			
 				<div data-role="content">
 
-					<div class="section group panzoom">
-						<img src="img/1/3.jpg" width="1366" height="1024" />
-					</div>
-					<div class="section group floating right light-grey resize" style="height:550px;">
-						<div class="inner">
-							<div class="caption">
-								<p>La Montréalaise Ann Levitt (1927-2013), la fille de Hannah et Alvin Walker (président de Holt Renfrew), a porté cette robe lors de sa lune de miel à Tower Isle, en Jamaïque (décembre 1950). Elle l’avait achetée chez Holt Renfrew à l’occasion d’une soirée donnée en l’honneur de Saidye Bronfman au mois de novembre.</p>
-								<div class="tombstone">Photo reproduite avec l’aimable autorisation de Louise Levitt</div>
+					<div class="section group">
+						<div class="col span_2_of_5 light-grey top bottom">
+						
+							<div class="inner">
+								<div class="caption">
+									<p>L’ensemble deux-pièces s’inspire des revers du smoking pour homme, les panneaux mats en gros-grain
+										contrastant avec le
+										lustre du velours de soie noir.</p>
+									<div class="tombstone"><em>The New York Times</em>/Redux</div>
+								</div>
 							</div>
 						</div>
-
+						<div class="col span_3_of_5 top bottom">
+							<img src="img/1/3.jpg" width="815.22" height="1024" />
+						</div>
 					</div>
 				
 				</div>
@@ -145,55 +151,24 @@
 			
 			</div>
 			
-			<!-- Detail image grid -->
-			<div id="page4" class="grid" data-role="page" data-prev="#page3" data-next="">
+			<!-- Single detail -->
+			<div id="page4" class="full-page" data-role="page" data-prev="#page3" data-next="#page5">
 			
 				<div data-role="content">
 				
 					<div class="section group">
 					
-						<div class="col span_1_of_3 top">
-							<div class="section group one">
-								<img src="img/1/grid/ROM2017_15907_33.jpg" style="height:330px!important;width:448.05px!important;" />
-							</div>
-							<div class="section group two light-grey rel" style="height:677px!important;width:448.05px!important;">
-								<div class="inner">
-									<div class="caption">
-										<p>Les rangs concentriques de dentelle de Valenciennes bleu marine et blanche sont appliqués un à la fois sur les coutures de la robe en tulle.</p>
-										<p><em>Ci-dessus:</em> endroit; <em>à droite</em> : envers</p>
-										<div class="tombstone">* Photo Laziz Hamani</div>
-									</div>
-								</div>
-
-							</div>
-						</div>
+						<div class="col span_2_of_5 light-grey top bottom">
 						
-						<div class="col span_1_of_3 top">
-							<div class="section group one">
-								<img src="img/1/grid/ROM2017_15907_32.jpg" style="height:330px!important;width:448.05px!important;" />
-							</div>
-							<div class="section group two">
-								<img src="img/1/grid/ROM2017_15850_2.jpg" style="height:677px!important;width:448.05px!important;" />
-							</div>
-
-						</div>
-						
-						<div class="col span_1_of_3 top">
-							<div class="section group one light-grey rel" style="height:330px!important;width:448.05px!important;">
-
-								<div class="inner">
-									<div class="caption" style="width:80%;margin-left:5px;">
-										<p><em>À gauche</em> : La jupe circulaire et son jupon sont constitués de 12 goussets. Le jupon est cousu à la ceinture de la jupe. </p>
-									</div>
+							<div class="inner">
+								<div class="caption">
+									<p><em>Duchesse</em> (gauche) : photographie<br>de Horst P. Horst pour <em>Vogue</em><br>(États-Unis), 15 septembre 1949</p>
+									<div class="tombstone">Horst P. Horst, <em>Vogue</em> © Conde Nast</div>
 								</div>
 							</div>
-							<div class="section group one">
-								<img src="img/1/grid/ROM2017_15863_14.jpg" style="height:330px!important;width:448.05px!important;" />
-							</div>
-							<div class="section group one rel">
-								<img src="img/1/grid/DIOR_HERITAGE_ROM_TORONTO_01_HCPE_1950_PAIMPOLAISE_GP07.jpg" style="height:330px!important;width:448.05px!important;" />
-								<span>*</span>
-							</div>
+						</div>
+						<div class="col span_3_of_5 top bottom">
+							<img src="img/1/4.jpg" width="815.22" height="1024" />
 						</div>
 						
 					</div>
@@ -208,6 +183,67 @@
 				</div>
 				
 			</div>
+
+			<!-- Detail image grid -->
+			<div id="page5" class="grid lastpage" data-role="page" data-prev="#page4" data-next="#page1">
+			
+				<div data-role="content">
+			
+					<div class="section group">
+			
+						<div class="col span_1_of_3 top">
+							<div class="section group one light-grey rel resize">
+								<div class="inner" style="height:292px;">
+									<div class="caption">
+										<p>La fermeture du corsage se trouve sur le côté et celle de la jupe à l’arrière, ce qui rend difficile, si ce n’est impossible, de s’habiller seule.</p>
+									</div>
+								</div>
+			
+							</div>
+							<div class="section group one">
+								<img src="img/1/5a.jpg" />
+							</div>
+							<div class="section group one">
+								<img src="img/1/5b.jpg" />
+							</div>
+						</div>
+			
+						<div class="col span_1_of_3 top">
+							<div class="section group one">
+								<img src="img/1/5e.jpg" style="height:331px;" />
+							</div>
+							<div class="section group one">
+								<img src="img/1/5d.jpg" style="height:331px;" />
+							</div>
+							<div class="section group one">
+								<img src="img/1/5c.jpg" style="height:331px;" />
+							</div>
+						</div>
+			
+						<div class="col span_1_of_3 top">
+							<div class="section group two rel">
+								<img src="img/1/5f.jpg" style="height:680px;" />
+								<span>*</span>
+							</div>
+							<div class="section group one light-grey rel" style="height:328px;">
+								<div class="inner">
+									<div class="caption">
+										<p>Cette robe a été commandée de Paris par Bergdorf Goodman, la boutique de luxe pour femmes de New York.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+			
+						<div class="buttons centre">
+							<ul>
+								<li><a data-ajax="false" href="index.html"><img src="img/home-grey.png" width="70" height="64" /></a></li>
+								<li><a data-ajax="false" href="dress1-fr.html"><img src="img/inner-grey.png" width="70" height="64" /></a></li>
+							</ul>
+						</div>
+			
+					</div>
+				</div>
+			</div>
 		
 		</div>
 		
@@ -217,6 +253,7 @@
 				<li class="page2"><div></div></li>
 				<li class="page3"><div></div></li>
 				<li class="page4"><div></div></li>
+				<li class="page5"><div></div></li>
 			</ul>
 		</div>
 		
