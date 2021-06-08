@@ -1,0 +1,735 @@
+/* ==========================================================================
+							Dior interactive CSS
+							*** strike a pose ***
+========================================================================== */
+
+/*
+* === html elements ===
+*/
+
+html, 
+body,
+.ui-mobile, 
+.ui-mobile body {
+    font-size: 115%;
+	line-height: 1.3;
+	font-family: Arial, sans-serif;
+	color: #ffffff; 
+	width: 100%;
+	position: fixed;
+	overflow: hidden;
+	height: 768px;
+}
+
+body.large {
+	font-size: 135%
+}
+
+.container {
+	width: 1024px;
+	position: relative;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+sup {
+	font-size: 70%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+	top: -0.5em;
+}
+
+.section {
+	max-height: 768px;
+}
+
+.inside .section {
+	overflow-y: hidden;
+	max-height: 603px;
+}
+
+.col {
+	overflow: hidden;
+}
+
+.ui-loader {
+	display:none !important;
+}
+
+.ui-icon-loading {
+	background:none !important;
+}
+
+/*
+* === helper classes ===
+*/
+
+.centre {
+	text-align: center;
+}
+
+.rel {
+	position: relative;
+}
+
+.col.top,
+.col.top .col {
+	margin-top: 0;
+}
+
+.col.bottom,
+.col.bottom .col {
+	margin-bottom: 0;
+}
+
+.col.one {
+	height: 330px;
+}
+
+.col.two {
+	height: 677px;
+}
+
+.black {
+	background-color: #000000;
+}
+
+.light-grey {
+	background-color: #000000;
+}
+
+.medium-grey {
+	background-color: #000000;
+}
+
+.dark-grey {
+	background-color: #000000;
+}
+
+/*
+* === text style ===
+*/
+
+h1 {
+	font-weight: normal;
+	font-size: 2.4em;
+	line-height: 1;
+	margin-bottom: 0;
+	font-style: italic;
+}
+
+
+h1 span {
+	font-size: 0.7em;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.55em;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+a,
+.ui-page-theme-a a:visited, 
+html .ui-bar-a a:visited, 
+html .ui-body-a a:visited, 
+html body .ui-group-theme-a a:visited {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: normal!important;
+}
+
+.inner {
+	padding: 20px;
+	position: relative;
+	z-index: 20;
+}
+
+.inner:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.credit {
+    position: absolute;
+    left: 2px;
+    bottom: -10px;
+    font-size: 0.5em;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+}
+
+.tombstone {
+	margin-top: 30px;
+	z-index: 5;
+	line-height: 1.1;
+	font-size: 0.9em;
+}
+
+.tombstone p {
+	margin-bottom: 5px;
+}
+
+/* resize rules */
+::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.8); 
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,0.5);
+}
+
+.large .resize,
+.large .grid .top > .section.resize,
+.grid .top > .section.scroll,
+.inside .section.scroll,
+.scroll {
+	overflow-y: scroll;
+}
+
+.large #list.resize {
+	max-height: 585px;
+}
+
+/*
+* === buttons & ui ===
+*/
+
+.buttons {
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    font-size: 2.16em;
+	z-index: 999;
+	line-height: 1;
+	opacity: 0.75;
+}
+
+.buttons ul,
+#resize ul {
+	list-style: none;
+}
+
+.buttons ul li:first-child {
+	padding-bottom: 25px;
+}
+
+.buttons a {
+	color: #ffffff;
+}
+
+.buttons img {
+	margin: 0 auto;
+}
+
+#resize {
+	position: absolute;
+    top: 17px;
+    left: 20px;
+    font-size: 2.7em;
+	z-index: 999;
+	line-height: 1;
+}
+
+#resize li {
+	display: inline-block;
+}
+
+#resize li a {
+	padding-right: 3px;
+	opacity: 0.8;
+	color: #ffffff!important;
+}
+
+#resize li:nth-child(2) a {
+	font-size: 0.65em;
+	opacity: 0.6;
+	pointer-events: none;
+	cursor: default;
+}
+
+.large #resize li:first-child a {
+	opacity: 0.6;
+	pointer-events: none;
+}
+	
+.large #resize li:nth-child(2) a {
+	opacity: 0.8;
+	pointer-events: auto;
+}
+
+.slide#resize, 
+.slide.buttons {
+	opacity: 1;
+}
+
+#more {
+	display: block;
+	position: absolute;
+	bottom: 27px;
+	right: 0;
+}
+
+#more img {
+	margin: 0;
+	height: auto;
+	width: 50px;
+	margin-right: 15px;
+	opacity: 0.75;
+}
+
+#description {
+	display: none;
+    height: auto;
+    width: 575px;
+	margin: 15% 50px;
+    position: absolute;
+    background: rgba(255,255,255,0.94);
+    color: #000000;
+    top: 0;
+    z-index: 9999;
+    font-size: 1.4em;
+	max-height: 593px;
+	overflow-y: scroll;
+}
+
+#description p {
+	padding: 25px;
+}
+
+#description a {
+	display: block;
+	margin-right: -19px;
+    margin-top: 30px;
+    float: right;
+    color: #000000;
+    font-size: 1.8em;
+	line-height: 0;
+}
+
+.large #description {
+	margin: 0 7%!important;
+}
+
+/*
+* === customize sections ===
+*/
+
+/* homepage */
+#dresses > .col {
+	padding: 53px 0 2px;
+	height: 495px;
+}
+
+#dresses img {
+	margin: 0 auto;
+	height: 100%;
+	width: auto;
+}
+
+#header {
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+	color: #333F48;
+}
+
+#header > .col:first-child .inner {
+	margin-left: 73px;
+}
+
+#header > .span_1_of_2:nth-child(2) .inner,
+#header > .col:nth-child(3) .inner {
+	text-align: right;
+	margin-right: 73px;
+}
+
+#header .top {
+    position: absolute;
+    width: 908px;
+    height: 145px;
+	top: -54px;
+}
+
+#header .right {
+	right: -20px;
+	border-radius: 0 0 0 100%;
+	transform: rotate(-12deg);
+}
+
+#header .left {
+	left: -20px;
+	border-radius: 0 0 100% 0;
+	transform: rotate(12deg);
+}
+
+#header a {
+	display: block;
+}
+
+#header h1 {
+	margin-top: 55px;
+	line-height: 1;
+}
+
+.single #header h1 ,
+#header .span_1_of_3:nth-child(2) h1 {
+	margin-top: 50px;
+}
+
+#header .span_1_of_3:nth-child(2) .inner {
+	padding: 20px 0;
+}
+
+#header .tombstone {
+	margin-top: 8px;
+}
+
+.home .line {
+	position: absolute;
+	width: 10px;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	height: 100%;
+	background-color: #ffffff;
+}
+
+.home .line.left {
+	margin: 0;
+	left: 336.33px;
+	right: auto;
+	height: 889.5px;
+	border-bottom-left-radius: 3px;
+}
+
+.home .line.right {
+	margin: 0;
+	right: 336.33px;
+	left: auto;
+	height: 889.5px;
+	border-bottom-right-radius: 3px;
+}
+
+/* inner landing page */
+.inside > div > div > .section:first-child img {
+	margin: 59px auto 25px;
+	height: 60%;
+	width: auto;
+}
+
+.inside > div > div > .section:first-child > .col,
+.inside > div > div > .section:first-child > .col:first-child .inner {
+	height: 603px;
+	overflow: hidden;
+}
+
+.inside > div > div > .section:first-child > .col:first-child .inner {
+	padding: 20px 0;
+}
+
+.inside h1 {
+	margin: 1em 0 0.3em;
+	line-height: 1;
+}
+
+.inside h2 {
+	line-height: 1;
+	margin-bottom: 0.5em;
+}
+
+.inside .credit {
+	bottom: 167px;
+}
+
+#list {
+	margin: 0 0 0 5px;
+}
+
+#list .inner {
+	padding-bottom: 0;
+}
+
+#list ul {
+	list-style: none;
+	font-size: 1.2em!important;
+}
+
+#list ul li {
+	padding: 5px 0;
+}
+
+#list ul li:first-letter {
+	text-transform: capitalize;
+}
+
+#list > div:nth-child(2) ul li {
+	padding-top: 8.5px;
+}
+
+#list ul li.double {
+	height: 70px;
+}
+
+#list .line {
+    position: absolute;
+    width: 1px;
+    top: 38px;
+    left: 0;
+    height: 63%;
+}
+
+#soundbite {
+	width: 80%;
+	padding: 30px 20px 0 25px;
+	line-height: 33px;
+}
+
+#soundbite .quote {
+	font-size: 1.2em!important;
+	font-style: italic;
+}
+
+.inside .links,
+.inside .links .bottom {
+	height: 164px;
+}
+
+.inside .links img {
+	border-radius: 100%;
+	width: 84%;
+	height: 84%;
+	margin: 6% auto 0;
+	box-shadow: 0px 0px 15px #D8DAD9;
+}
+
+.inside .links.two .bottom:first-child {
+	margin-left: 341px;
+}
+
+.inside .links.three .bottom:first-child {
+	margin-left: 256px;
+}
+
+.inside .links.four .bottom:first-child {
+	margin-left: 170.69px;
+}
+
+.inside .links.five .bottom:first-child {
+	margin-left: 85.46px;
+}
+
+.inside .line.horizontal {
+    position: absolute;
+    width: 1024px;
+    bottom: 164px;
+    left: 0;
+    height: 10px;
+    background-color: #ffffff;
+}
+
+.inside .line.vertical {
+    position: absolute;
+    width: 10px;
+    top: 0;
+    left: 336.33px;
+    height: 598px;
+    background-color: #ffffff;
+}
+
+.inside .buttons,
+.slide .buttons {
+	top: 22px;
+}
+
+
+/* slider */
+.container.slide {
+	background-color: #ffffff;
+	height: 768px;
+}
+
+.slide div[data-role="page"] {
+	height: 768px;
+	overflow: hidden;
+}
+
+.slide .caption {
+	margin: 15px auto;
+	font-size: 1.15em;
+	line-height: 1.3;
+}
+
+.slide .grid .caption {
+	margin-top: 0;
+}
+
+.slide .caption p {
+	margin-bottom: 10px;
+}
+
+.slide .caption ul {
+	padding-left: 25px;
+}
+
+.slide .caption ul li {
+	padding: 1px 0;
+}
+
+#menu {
+    position: absolute;
+    z-index: 1000;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    width: auto;
+    margin: 0 auto;
+	text-align: center;
+	font-size: 0;
+	opacity: 0.75;
+}
+
+#menu ul {
+	list-style: none;
+}
+
+#menu ul li {
+	display: inline-block;
+	padding: 0 8px;
+}
+
+#menu ul li div {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: #000000;
+    box-shadow: 0px 0px 8px #ffffff;
+}
+
+#menu ul li.active div {
+	background-color: #ffffff;
+	box-shadow: 0px 0px 3px #000000;
+}
+
+/* full-page images */
+.full-page .col.light-grey {
+	height: 768px;
+}
+
+.full-page .col.light-grey .inner {
+	margin-top: 85px;
+}
+
+.full-page.chart .col.light-grey img {
+	margin: 15px auto;
+}
+
+
+.buttons.dark a {
+	color: #000000;
+}
+
+/* image grid */
+.grid .top > .section {
+    display: block;
+    float: left;
+    margin: 0.4% 0 3.4% 0.8%;
+	overflow: hidden;
+}
+
+.grid .col.top .section:first-child {
+	margin-top: 0;
+}
+
+.grid.col.top .section:last-child {
+	margin-bottom: 0;
+}
+
+.grid .col.top:first-child .section {
+	margin-left: 0;
+}
+
+.grid > div > .section > .col:first-child .col {
+	width: 100%;
+}
+
+.grid .col span {
+    position: absolute;
+    bottom: -15px;
+    right: 7px;
+    font-size: 38px;
+}
+
+/* detail closeup - landscape */
+.floating {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 90;
+	width: 448.05px;
+	height: 300px;
+	overflow: hidden;
+}
+
+.floating.right {
+	right: 0;
+	left: auto;
+}
+
+/*
+* === jquery mobile overrides ===
+*/
+
+.ui-content {
+	padding: 0;
+}
+
+div.ui-overlay-a, div.ui-page-theme-a {
+	background-color: transparent;
+	color: #ffffff;
+	text-shadow: none;
+}
+
+.ui-page {
+	-webkit-backface-visibility: hidden;
+	width: 1024px;
+} 
+
+/*
+* === panzoom ===
+*/
+
+.panzoom {
+	z-index: 50;
+	position: relative;
+}
+
+.panzoom .pinch {
+    position: fixed;
+    bottom: 15px!important;
+    right: 15px;
+    z-index: 999;
+    background: url(pinch-zoom.png) no-repeat 0 0;
+    height: 90px;
+    width: 125px;
+	opacity: 0.75;
+}
+
+.panzoom .pinch.dark {
+	background: url(pinch-zoom-dark.png) no-repeat 0 0;
+}
